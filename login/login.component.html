@@ -1,0 +1,35 @@
+<div class="loginContainer">
+    <div class="login-left">
+      <img class="loginImg" src="../assets/logImg.svg" alt="image" />
+    </div>
+    <div class="login-right">
+      <form class="loginbox">
+        <div>Hi Welcome Back !</div>
+        <div>enter your details bellow</div>
+        <label for="adress" class="label"> Adresse : </label>
+        <input
+        ngModel
+        formControlName="email"
+          id="adress"
+          type="email"
+          name="adress"
+          placeholder="  enter your adress here"
+          required
+        />
+        <label for="mdp" class="label"> Password : </label>
+        <input
+        ngModel
+        formControlName="mdp"
+          id="mdp"
+          name="mdp"
+          type="password"
+          placeholder="   enter your password here"
+          required
+        />
+        <button type="submit" value="Submit" class="button-login" routerLink="/Admin/dashbord">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+  

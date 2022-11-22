@@ -1,0 +1,86 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()">A</button>
+        <div class="logo-text" @fadeInOut *ngIf="collapsed">Admin</div>
+        <button class="btn-close" @rotate *ngIf="collapsed" (click)="closeSidenav()">
+            <i class="fal fa-times close-icon"></i>
+        </button>
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="dashbord" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <mat-icon class="sidenav-link-icon"> home</mat-icon>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    Dashbord
+                </span>
+            </a>
+        </li>
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="users" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <mat-icon class="sidenav-link-icon"> group</mat-icon>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    Users
+                </span>
+            </a>
+        </li>
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="interns" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <mat-icon class="sidenav-link-icon"> account_circle</mat-icon>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    Interns
+                </span>
+            </a>
+        </li><li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="messages" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <mat-icon class="sidenav-link-icon">email</mat-icon>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    Messages
+                </span>
+            </a>
+        </li><li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="statistics" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <mat-icon class="sidenav-link-icon"> timeline</mat-icon>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    Statistics
+                </span>
+            </a>
+        </li><li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="logout" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <mat-icon class="sidenav-link-icon" > exit_to_app</mat-icon>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    Logout
+                </span>
+            </a>
+        </li><li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="settings" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <mat-icon class="sidenav-link-icon" > settings</mat-icon>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    Settings
+                </span>
+            </a>
+        </li>
+    </ul>
+    
+</div>

@@ -1,0 +1,83 @@
+.loginContainer{
+    display: flex;
+    //background-color: #999ba7;
+}
+.login-left{
+    flex: 1;
+    
+}
+.loginImg{
+    transform: scale(0.58);
+    margin: 27px;
+    margin-top: 39px !important;
+}
+.login-right{
+    flex: 1;
+
+}
+.loginbox{
+  // background-color:#92c7db ; 
+   background-color:rgba(63,61,86,255);
+    border-radius: 15px;
+    width: 400px;
+    height: 500px;
+    margin-top:13%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    //color: aliceblue;
+    color:#ffffff; 
+}
+.loginbox>:nth-child(1){
+    font-size: 30px;
+    margin-top:2rem;
+    margin-left: 4.5rem;
+}
+.loginbox>:nth-child(2){
+    font-size: 15px;
+    margin-left: 6.3rem;
+    margin-top: 5px;
+}
+.loginbox>:nth-child(3){
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+.loginbox>:nth-child(4){
+    width: 360px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 9px;
+}
+.loginbox>:nth-child(5){
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.loginbox>:nth-child(6){
+    width: 360px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 9px;
+}
+.button-login{
+    margin-top: 25px;
+    width: 360px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 9px;
+    font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color:   #12789c;
+  color: #ffffff;
+  border-style: none;
+  
+
+}
+
+.button-login:hover {
+    background-color:#2596be;}
